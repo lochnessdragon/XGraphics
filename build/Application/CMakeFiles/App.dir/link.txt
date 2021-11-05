@@ -1,1 +1,1 @@
-/nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc -rdynamic CMakeFiles/App.dir/src/main.c.o -o App 
+/nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc -rdynamic CMakeFiles/App.dir/src/main.c.o -o App  -Wl,-rpath,/home/runner/GraphicsExampleApp/build/AbstractionLayer:/nix/store/k4n7c5m82dvh51ym88n6f2aws8m90g0m-libX11-1.7.2/lib ../AbstractionLayer/libAbstraction.so -lGL ../_deps/glfw-build/src/libglfw3.a -lrt -lm -ldl /nix/store/k4n7c5m82dvh51ym88n6f2aws8m90g0m-libX11-1.7.2/lib/libX11.so -lpthread 

@@ -4,7 +4,7 @@
 # compile C with /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I/home/runner/GraphicsExampleApp/AbstractionLayer/include -I/home/runner/GraphicsExampleApp/build/_deps/glfw-src/include -I/home/runner/GraphicsExampleApp/AbstractionLayer/libs/glad/include
 
 C_FLAGS = 
 

@@ -75,6 +75,52 @@ CMAKE_BINARY_DIR = /home/runner/GraphicsExampleApp/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/nix/store/cbxqzxwlga5pm9rk8qa8fgv5387r540l-cmake-3.19.7/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/nix/store/cbxqzxwlga5pm9rk8qa8fgv5387r540l-cmake-3.19.7/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/nix/store/cbxqzxwlga5pm9rk8qa8fgv5387r540l-cmake-3.19.7/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/nix/store/cbxqzxwlga5pm9rk8qa8fgv5387r540l-cmake-3.19.7/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/nix/store/cbxqzxwlga5pm9rk8qa8fgv5387r540l-cmake-3.19.7/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/nix/store/cbxqzxwlga5pm9rk8qa8fgv5387r540l-cmake-3.19.7/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -144,32 +190,86 @@ Abstraction/fast:
 	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/build
 .PHONY : Abstraction/fast
 
-src/window.o: src/window.c.o
+src/backends/opengl/opengl_renderer.o: src/backends/opengl/opengl_renderer.c.o
 
-.PHONY : src/window.o
+.PHONY : src/backends/opengl/opengl_renderer.o
 
 # target to build an object file
-src/window.c.o:
-	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/window.c.o
-.PHONY : src/window.c.o
+src/backends/opengl/opengl_renderer.c.o:
+	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.o
+.PHONY : src/backends/opengl/opengl_renderer.c.o
 
-src/window.i: src/window.c.i
+src/backends/opengl/opengl_renderer.i: src/backends/opengl/opengl_renderer.c.i
 
-.PHONY : src/window.i
+.PHONY : src/backends/opengl/opengl_renderer.i
 
 # target to preprocess a source file
-src/window.c.i:
-	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/window.c.i
-.PHONY : src/window.c.i
+src/backends/opengl/opengl_renderer.c.i:
+	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.i
+.PHONY : src/backends/opengl/opengl_renderer.c.i
 
-src/window.s: src/window.c.s
+src/backends/opengl/opengl_renderer.s: src/backends/opengl/opengl_renderer.c.s
 
-.PHONY : src/window.s
+.PHONY : src/backends/opengl/opengl_renderer.s
 
 # target to generate assembly for a file
-src/window.c.s:
-	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/window.c.s
-.PHONY : src/window.c.s
+src/backends/opengl/opengl_renderer.c.s:
+	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.s
+.PHONY : src/backends/opengl/opengl_renderer.c.s
+
+src/core/window.o: src/core/window.c.o
+
+.PHONY : src/core/window.o
+
+# target to build an object file
+src/core/window.c.o:
+	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/core/window.c.o
+.PHONY : src/core/window.c.o
+
+src/core/window.i: src/core/window.c.i
+
+.PHONY : src/core/window.i
+
+# target to preprocess a source file
+src/core/window.c.i:
+	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/core/window.c.i
+.PHONY : src/core/window.c.i
+
+src/core/window.s: src/core/window.c.s
+
+.PHONY : src/core/window.s
+
+# target to generate assembly for a file
+src/core/window.c.s:
+	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/core/window.c.s
+.PHONY : src/core/window.c.s
+
+src/graphics/renderer.o: src/graphics/renderer.c.o
+
+.PHONY : src/graphics/renderer.o
+
+# target to build an object file
+src/graphics/renderer.c.o:
+	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/graphics/renderer.c.o
+.PHONY : src/graphics/renderer.c.o
+
+src/graphics/renderer.i: src/graphics/renderer.c.i
+
+.PHONY : src/graphics/renderer.i
+
+# target to preprocess a source file
+src/graphics/renderer.c.i:
+	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/graphics/renderer.c.i
+.PHONY : src/graphics/renderer.c.i
+
+src/graphics/renderer.s: src/graphics/renderer.c.s
+
+.PHONY : src/graphics/renderer.s
+
+# target to generate assembly for a file
+src/graphics/renderer.c.s:
+	cd /home/runner/GraphicsExampleApp/build && $(MAKE) $(MAKESILENT) -f AbstractionLayer/CMakeFiles/Abstraction.dir/build.make AbstractionLayer/CMakeFiles/Abstraction.dir/src/graphics/renderer.c.s
+.PHONY : src/graphics/renderer.c.s
 
 # Help Target
 help:
@@ -178,11 +278,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... Abstraction"
-	@echo "... src/window.o"
-	@echo "... src/window.i"
-	@echo "... src/window.s"
+	@echo "... src/backends/opengl/opengl_renderer.o"
+	@echo "... src/backends/opengl/opengl_renderer.i"
+	@echo "... src/backends/opengl/opengl_renderer.s"
+	@echo "... src/core/window.o"
+	@echo "... src/core/window.i"
+	@echo "... src/core/window.s"
+	@echo "... src/graphics/renderer.o"
+	@echo "... src/graphics/renderer.i"
+	@echo "... src/graphics/renderer.s"
 .PHONY : help
 
 

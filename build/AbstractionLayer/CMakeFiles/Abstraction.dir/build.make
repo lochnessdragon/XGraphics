@@ -76,30 +76,64 @@ include AbstractionLayer/CMakeFiles/Abstraction.dir/progress.make
 # Include the compile flags for this target's objects.
 include AbstractionLayer/CMakeFiles/Abstraction.dir/flags.make
 
-AbstractionLayer/CMakeFiles/Abstraction.dir/src/window.c.o: AbstractionLayer/CMakeFiles/Abstraction.dir/flags.make
-AbstractionLayer/CMakeFiles/Abstraction.dir/src/window.c.o: ../AbstractionLayer/src/window.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/GraphicsExampleApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object AbstractionLayer/CMakeFiles/Abstraction.dir/src/window.c.o"
-	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Abstraction.dir/src/window.c.o -c /home/runner/GraphicsExampleApp/AbstractionLayer/src/window.c
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/core/window.c.o: AbstractionLayer/CMakeFiles/Abstraction.dir/flags.make
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/core/window.c.o: ../AbstractionLayer/src/core/window.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/GraphicsExampleApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object AbstractionLayer/CMakeFiles/Abstraction.dir/src/core/window.c.o"
+	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Abstraction.dir/src/core/window.c.o -c /home/runner/GraphicsExampleApp/AbstractionLayer/src/core/window.c
 
-AbstractionLayer/CMakeFiles/Abstraction.dir/src/window.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Abstraction.dir/src/window.c.i"
-	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/runner/GraphicsExampleApp/AbstractionLayer/src/window.c > CMakeFiles/Abstraction.dir/src/window.c.i
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/core/window.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Abstraction.dir/src/core/window.c.i"
+	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/runner/GraphicsExampleApp/AbstractionLayer/src/core/window.c > CMakeFiles/Abstraction.dir/src/core/window.c.i
 
-AbstractionLayer/CMakeFiles/Abstraction.dir/src/window.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Abstraction.dir/src/window.c.s"
-	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/runner/GraphicsExampleApp/AbstractionLayer/src/window.c -o CMakeFiles/Abstraction.dir/src/window.c.s
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/core/window.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Abstraction.dir/src/core/window.c.s"
+	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/runner/GraphicsExampleApp/AbstractionLayer/src/core/window.c -o CMakeFiles/Abstraction.dir/src/core/window.c.s
+
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.o: AbstractionLayer/CMakeFiles/Abstraction.dir/flags.make
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.o: ../AbstractionLayer/src/backends/opengl/opengl_renderer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/GraphicsExampleApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object AbstractionLayer/CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.o"
+	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.o -c /home/runner/GraphicsExampleApp/AbstractionLayer/src/backends/opengl/opengl_renderer.c
+
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.i"
+	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/runner/GraphicsExampleApp/AbstractionLayer/src/backends/opengl/opengl_renderer.c > CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.i
+
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.s"
+	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/runner/GraphicsExampleApp/AbstractionLayer/src/backends/opengl/opengl_renderer.c -o CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.s
+
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/graphics/renderer.c.o: AbstractionLayer/CMakeFiles/Abstraction.dir/flags.make
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/graphics/renderer.c.o: ../AbstractionLayer/src/graphics/renderer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/GraphicsExampleApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object AbstractionLayer/CMakeFiles/Abstraction.dir/src/graphics/renderer.c.o"
+	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Abstraction.dir/src/graphics/renderer.c.o -c /home/runner/GraphicsExampleApp/AbstractionLayer/src/graphics/renderer.c
+
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/graphics/renderer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Abstraction.dir/src/graphics/renderer.c.i"
+	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/runner/GraphicsExampleApp/AbstractionLayer/src/graphics/renderer.c > CMakeFiles/Abstraction.dir/src/graphics/renderer.c.i
+
+AbstractionLayer/CMakeFiles/Abstraction.dir/src/graphics/renderer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Abstraction.dir/src/graphics/renderer.c.s"
+	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && /nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/runner/GraphicsExampleApp/AbstractionLayer/src/graphics/renderer.c -o CMakeFiles/Abstraction.dir/src/graphics/renderer.c.s
 
 # Object files for target Abstraction
 Abstraction_OBJECTS = \
-"CMakeFiles/Abstraction.dir/src/window.c.o"
+"CMakeFiles/Abstraction.dir/src/core/window.c.o" \
+"CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.o" \
+"CMakeFiles/Abstraction.dir/src/graphics/renderer.c.o"
 
 # External object files for target Abstraction
 Abstraction_EXTERNAL_OBJECTS =
 
-AbstractionLayer/libAbstraction.so: AbstractionLayer/CMakeFiles/Abstraction.dir/src/window.c.o
+AbstractionLayer/libAbstraction.so: AbstractionLayer/CMakeFiles/Abstraction.dir/src/core/window.c.o
+AbstractionLayer/libAbstraction.so: AbstractionLayer/CMakeFiles/Abstraction.dir/src/backends/opengl/opengl_renderer.c.o
+AbstractionLayer/libAbstraction.so: AbstractionLayer/CMakeFiles/Abstraction.dir/src/graphics/renderer.c.o
 AbstractionLayer/libAbstraction.so: AbstractionLayer/CMakeFiles/Abstraction.dir/build.make
+AbstractionLayer/libAbstraction.so: _deps/glfw-build/src/libglfw3.a
+AbstractionLayer/libAbstraction.so: /nix/store/9bh3986bpragfjmr32gay8p95k91q4gy-glibc-2.33-47/lib/librt.so
+AbstractionLayer/libAbstraction.so: /nix/store/9bh3986bpragfjmr32gay8p95k91q4gy-glibc-2.33-47/lib/libm.so
+AbstractionLayer/libAbstraction.so: /nix/store/k4n7c5m82dvh51ym88n6f2aws8m90g0m-libX11-1.7.2/lib/libX11.so
 AbstractionLayer/libAbstraction.so: AbstractionLayer/CMakeFiles/Abstraction.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/runner/GraphicsExampleApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libAbstraction.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/runner/GraphicsExampleApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libAbstraction.so"
 	cd /home/runner/GraphicsExampleApp/build/AbstractionLayer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Abstraction.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

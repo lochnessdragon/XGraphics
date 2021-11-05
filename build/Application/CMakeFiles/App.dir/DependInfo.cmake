@@ -10,10 +10,15 @@ set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../AbstractionLayer/include"
+  "_deps/glfw-src/include"
+  "../AbstractionLayer/libs/glad/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/runner/GraphicsExampleApp/build/AbstractionLayer/CMakeFiles/Abstraction.dir/DependInfo.cmake"
+  "/home/runner/GraphicsExampleApp/build/_deps/glfw-build/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -98,6 +98,11 @@ App_EXTERNAL_OBJECTS =
 
 Application/App: Application/CMakeFiles/App.dir/src/main.c.o
 Application/App: Application/CMakeFiles/App.dir/build.make
+Application/App: AbstractionLayer/libAbstraction.so
+Application/App: _deps/glfw-build/src/libglfw3.a
+Application/App: /nix/store/9bh3986bpragfjmr32gay8p95k91q4gy-glibc-2.33-47/lib/librt.so
+Application/App: /nix/store/9bh3986bpragfjmr32gay8p95k91q4gy-glibc-2.33-47/lib/libm.so
+Application/App: /nix/store/k4n7c5m82dvh51ym88n6f2aws8m90g0m-libX11-1.7.2/lib/libX11.so
 Application/App: Application/CMakeFiles/App.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/runner/GraphicsExampleApp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable App"
 	cd /home/runner/GraphicsExampleApp/build/Application && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/App.dir/link.txt --verbose=$(VERBOSE)
